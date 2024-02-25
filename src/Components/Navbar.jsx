@@ -3,18 +3,69 @@ import { Link } from 'react-router-dom';
 
 export default class Navbar extends React.Component{
   render(){
-    return <nav className="bg-gray-800 text-white p-4">
-      <div className="container mx-auto flex justify-between items-center">
-        <div className="text-lg font-semibold">
-          <Link to="/" className="hover:text-red-300">My Portfolio</Link>
+    return (
+      <>
+        <div className="navbar bg-base-300">
+          <div className="navbar-start">
+            <a className="btn btn-ghost text-xl">作品選集</a>
+            <div className="hidden lg:flex">
+              <ul className="menu menu-horizontal px-1">
+                <li><Link to="/" >Home</Link></li>
+                <li><Link to="/about" >About</Link></li>
+                <li><Link to="/projects" >Projects</Link></li>
+                <li><Link to="/contact" >Contact</Link></li>
+                <li>
+                  <details>
+                    <summary>Parent</summary>
+                    <ul className="p-2">
+                      <li><a>Submenu 1</a></li>
+                      <li><a>Submenu 2</a></li>
+                    </ul>
+                  </details>
+                </li>
+              </ul>
+            </div>
+          </div>
+          
+          <div className="navbar-end">
+            <div className="dropdown dropdown-end">
+              <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">
+                <div className="indicator">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" /></svg>
+                  <span className="badge badge-sm indicator-item">8</span>
+                </div>
+              </div>
+              <div tabIndex={0} className="mt-3 z-[1] card card-compact dropdown-content w-52 bg-base-100 shadow">
+                <div className="card-body">
+                  <span className="font-bold text-lg">8 Items</span>
+                  <span className="text-info">Subtotal: $999</span>
+                  <div className="card-actions">
+                    <button className="btn btn-primary btn-block">View cart</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="dropdown dropdown-end">
+              <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
+                <div className="w-10 rounded-full">
+                  <img alt="Tailwind CSS Navbar component" src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+                </div>
+              </div>
+              <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                <li>
+                  <a className="justify-between">
+                    Profile
+                    <span className="badge">New</span>
+                  </a>
+                </li>
+                <li><a>Settings</a></li>
+                <li><a>Logout</a></li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <div className="space-x-4">
-          <Link to="/" className="hover:text-red-300">Home</Link>
-          <Link to="/about" className="hover:text-red-300">About</Link>
-          <Link to="/projects" className="hover:text-red-300">Projects</Link>
-          <Link to="/contact" className="hover:text-red-300">Contact</Link>
-        </div>
-      </div>
-    </nav>
+      </>
+      
+    );
   }
 }
