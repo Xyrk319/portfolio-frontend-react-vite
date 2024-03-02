@@ -27,11 +27,18 @@ export default class HomeCardContainer extends React.Component{
             }
         ];
         return (
+            <>
+            <div className="flex-1 center text-lg font-bold">
+                Projects
+                <hr/>
+            </div>
             <div className="grid grid-cols-1 gap-4 center md:grid-cols-2 lg:grid-cols-3">
                 {
                     cards.map( card => <Card imageUrl={card.imageUrl} title={card.test}/>)
                 }
             </div>
+            </>
+            
         );
     }
 }

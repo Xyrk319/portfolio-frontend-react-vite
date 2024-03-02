@@ -7,9 +7,9 @@ export default class Navbar extends React.Component{
       <>
         <div className="navbar bg-base-300">
           <div className="navbar-start">
-            <a className="btn btn-ghost text-xl" href='/'>作品選集</a>
+            <a className="text-xl btn btn-ghost" href='/'>作品選集</a>
             <div className="hidden lg:flex">
-              <ul className="menu menu-horizontal px-1">
+              <ul className="px-1 menu menu-horizontal">
                 <li><Link to="/" >Home</Link></li>
                 <li><Link to="/about" >About</Link></li>
                 <li><Link to="/projects" >Projects</Link></li>
