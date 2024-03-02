@@ -1,5 +1,4 @@
 import React from 'react';
-import Card from '../Components/Card';
 import HomeCardContainer from '../Components/HomeCardContainer';
 import IntroductionContainer from '../Components/IntroductionContainer';
 
