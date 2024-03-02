@@ -7,7 +7,6 @@ export default class Home extends React.Component {
         return <div>
             <div className='h-screen backdrop-blur-sm bg-slate-600'>
                 <IntroductionContainer/>
-                <HomeCardContainer />
             </div>
         </div>;
     }
