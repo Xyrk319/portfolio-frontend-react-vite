@@ -28,9 +28,8 @@ export default class HomeCardContainer extends React.Component{
         ];
         return (
             <>
-            <div className="flex-1 center text-lg font-bold">
-                Projects
-                <hr/>
+            <div className="flex-1">
+                <h1 className="text-3xl font-bold">Projects</h1>
             </div>
             <div className="grid grid-cols-1 gap-4 center md:grid-cols-2 lg:grid-cols-3">
                 {

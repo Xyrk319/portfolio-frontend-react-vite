@@ -6,11 +6,11 @@ export default class GuestLayout extends React.Component {
 
     render() {
         return (
-            <>
+            <div className="flex flex-col h-screen"> 
                 <Navbar />
-                <main>{this.props.children}</main>
+                <main className="flex-grow">{this.props.children}</main> 
                 <Footer />
-            </>
+            </div>
         );
     }
 }
