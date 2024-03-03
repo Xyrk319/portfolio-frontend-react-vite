@@ -4,7 +4,7 @@ import IntroductionContainer from '../Components/IntroductionContainer';
 export default class Home extends React.Component {
     
     render() {
-        const imagePath = "public/assets/introduction-container-bg.svg";
+        const imagePath = "/assets/introduction-container-bg.svg";
 
         return (
             <div className="min-h-screen hero" style={{backgroundImage: 'url('+imagePath+')'}}>
