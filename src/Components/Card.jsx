@@ -7,7 +7,6 @@ export default class Card extends React.Component{
         const { imageUrls, title, description } = this.props;
     
         return (
-            <>
             <div className="w-96 rounded-lg shadow-xl bg-base-100">
                 <div className="w-96 h-96">
                     <Carousel images={imageUrls}/>
@@ -19,7 +18,6 @@ export default class Card extends React.Component{
                     <p className="text-justify">{description}</p>
                 </div>
             </div>
-            </>
             
         );
     }

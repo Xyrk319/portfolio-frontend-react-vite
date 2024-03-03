@@ -32,11 +32,11 @@ export default class ProjectCardContainer extends React.Component{
             }
         ];
         return (
-            <div className="mt-32">
+            <div>
                 <div className="flex justify-center align-middle">
                     <h1 className="pb-4 text-5xl font-semibold text-white">Projects</h1>
                 </div>
-                <div className="grid grid-cols-1 gap-4 center md:grid-cols-2 lg:grid-cols-3">
+                <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
                     {
                         cards.map( (card,index) => <Card key={index} imageUrls={card.imageUrls} title={card.test} description={card.description}/>)
                     }
