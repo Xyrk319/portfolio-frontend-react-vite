@@ -1,5 +1,4 @@
 import React from 'react';
-import HomeCardContainer from '../Components/ProjectsContainer';
 import IntroductionContainer from '../Components/IntroductionContainer';
 
 export default class Home extends React.Component {

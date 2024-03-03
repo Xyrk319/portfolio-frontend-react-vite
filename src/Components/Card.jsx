@@ -1,23 +1,26 @@
 import React from "react";
-
+import Carousel from './Carousel';
 
 export default class Card extends React.Component{
-
+    
     render() {
-        const { imageUrl, title, description } = this.props; // Destructure props for easy access
+        const { imageUrls, title, description } = this.props;
     
         return (
             <>
-                <div className="card w-96 bg-base-100 shadow-xl">
-                <figure><img src={imageUrl}/></figure>
+            <div className="w-96 rounded-lg shadow-xl bg-base-100">
+                <div className="w-96 h-96">
+                    <Carousel images={imageUrls}/>
+                </div>
                 <div className="card-body">
-                    <h2 className="card-title">
+                    <h2 className="flex justify-center align-middle card-title">
                     {title}
                     </h2>
-                    <p>{description}</p>
+                    <p className="text-justify">{description}</p>
                 </div>
-                </div>
+            </div>
             </>
+            
         );
     }
 }
