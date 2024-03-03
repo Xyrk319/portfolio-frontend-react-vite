@@ -1,5 +1,5 @@
 import React from 'react';
-import HomeCardContainer from '../Components/HomeCardContainer';
+import ProjectsContainer from '../Components/ProjectsContainer';
 
 export default class Projects extends React.Component {
     render() {
@@ -7,7 +7,7 @@ export default class Projects extends React.Component {
         return (
             <div className="min-h-screen hero" style={{backgroundImage: 'url('+imagePath+')'}}>
             <div className="bg-opacity-60 hero-overlay"></div>
-                <HomeCardContainer/>
+                <ProjectsContainer/>
             </div>
         );
     }
