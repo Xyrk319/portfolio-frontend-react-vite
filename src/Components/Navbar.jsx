@@ -22,7 +22,7 @@ export default class Navbar extends React.Component{
             <div className="dropdown dropdown-end">
               <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
                 <div className="w-10 rounded-full">
-                  <img alt="Avatar" src=".//assets/avatar.png" />
+                  <img alt="Avatar" src="/assets/avatar.png" />
                 </div>
               </div>
               <ul tabIndex={0} className="z-10 p-2 mt-3 w-52 shadow menu menu-sm dropdown-content bg-base-100 rounded-box">
